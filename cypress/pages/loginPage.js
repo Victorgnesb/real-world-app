@@ -6,7 +6,7 @@ class LoginPage {
             passwordField : "[name ='password']",
             loginButton : "[type='submit']",
             wrongCredentialAlert : "[role='alert']",
-        
+            logoutButton : "[role='button']"
         }
         return selectors
     }
@@ -15,15 +15,21 @@ class LoginPage {
         cy.visit('http://localhost:3000/signin')
     }
 
-    loginWithUser (username, realPassword){
-        cy.get(this.selectorsList()  .usernameField ) .type (username) 
-        cy.get(this.selectorsList()  .passwordField) .type (realPassword)
+    loginWithUser (username, password){
+        cy.get(this.selectorsList() .usernameField ) .type (username) 
+        cy.get(this.selectorsList() .passwordField) .type (password)
         cy.get(this.selectorsList() .loginButton) .click()
+        
     }
 
+    loginSucess(){
+        cy.get(this.selectorsList() .logoutButton) .should('be.visible') 
+
+    }
+    
     loginError(){
         cy.get(this.selectorsList() .wrongCredentialAlert) .should('be.visible')
-    }
+        }
 
 
 }
