@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Ted",
       "defaultPrivacyLevel": "public",
-      "balance": 150953,
+      "balance": 0,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -71,9 +71,20 @@
       "phoneNumber": "990-583-8419",
       "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Lia",
       "defaultPrivacyLevel": "public",
-      "balance": 49474,
+      "balance": 200049574,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "6SEPrtK7g",
+      "uuid": "6256764c-18eb-4b32-a270-fba35f2dcfa9",
+      "firstName": "Boa",
+      "lastName": "Noite",
+      "username": "Boa Noite",
+      "password": "$2a$10$6xgCDL7dToTCQwZeZdZHeekCTCt/L1HkA5JMprhWTsJjurpeHfce6",
+      "balance": 0,
+      "createdAt": "2026-05-05T21:32:56.837Z",
+      "modifiedAt": "2026-05-05T21:32:56.837Z"
     }
   ],
   "contacts": [
@@ -9855,6 +9866,30 @@
       "requestResolvedAt": "",
       "createdAt": "2023-11-10T07:15:28.127Z",
       "modifiedAt": "2024-03-07T21:58:09.668Z"
+    },
+    {
+      "id": "lTzbyr6yA",
+      "uuid": "dbfe1523-bd6d-4fca-9404-52ef8c8e91b8",
+      "amount": 100,
+      "description": "Lume Transfer",
+      "receiverId": "WHjJ4qR2R2",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2026-05-05T21:32:59.186Z",
+      "modifiedAt": "2026-05-05T21:32:59.186Z"
+    },
+    {
+      "id": "DNmaavAzn",
+      "uuid": "eb54135b-8a65-46c8-9442-1db848f918be",
+      "amount": 200000000,
+      "description": "Exceed Amount",
+      "receiverId": "WHjJ4qR2R2",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2026-05-05T21:33:00.977Z",
+      "modifiedAt": "2026-05-05T21:33:00.977Z"
     }
   ],
   "likes": [
@@ -10431,6 +10466,26 @@
       "isRead": false,
       "createdAt": "2024-02-01T18:53:45.699Z",
       "modifiedAt": "2024-03-07T17:13:52.110Z"
+    },
+    {
+      "id": "cxS5sqYm4P",
+      "uuid": "19b1729a-aecd-4f48-93e6-96a4c59d965e",
+      "userId": "WHjJ4qR2R2",
+      "transactionId": "lTzbyr6yA",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2026-05-05T21:32:59.217Z",
+      "modifiedAt": "2026-05-05T21:32:59.217Z"
+    },
+    {
+      "id": "sGJJNv6DGH",
+      "uuid": "7613c4f4-5d3a-4824-88c9-88289fb787c5",
+      "userId": "WHjJ4qR2R2",
+      "transactionId": "DNmaavAzn",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2026-05-05T21:33:01.015Z",
+      "modifiedAt": "2026-05-05T21:33:01.015Z"
     }
   ],
   "banktransfers": [
@@ -10983,15 +11038,23 @@
       "transactionId": "gaggAe7wNoiC",
       "createdAt": "2023-03-24T22:18:19.407Z",
       "modifiedAt": "2024-03-07T13:32:42.472Z"
+    },
+    {
+      "id": "V0Xwr2Sod9",
+      "uuid": "dd6d4211-cd4d-4cd9-a349-4b0c975f694f",
+      "userId": "uBmeaz5pX",
+      "amount": 199849147,
+      "transactionId": "DNmaavAzn",
+      "type": "withdrawal",
+      "createdAt": "2026-05-05T21:33:00.979Z",
+      "modifiedAt": "2026-05-05T21:33:00.979Z"
     }
   ],
-        "userFail": {
-      "username" : "test",
-      "password" : "test"
-
-    },
-      "userSucess" : {
-        "accPassword" : "s3cret"
-      }  
+  "userFail": {
+    "username": "test",
+    "password": "test"
+  },
+  "userSucess": {
+    "accPassword": "s3cret"
+  }
 }
-
